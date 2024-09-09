@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+
+/* Small Container  */
+
+.container-sm{
+    max-width: 500px;
+}
+
+/* Primary Color  */
+.header .primary-color {
+    background-color: #fcf9e5;
+  }
+
+ul{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: #fcf9e5;
+}
+
+
+
+.logo img{
+   width: 100px;
+   height: auto;
+}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    margin: 10px 169px;
+
+}
+
+
+.header-right ul{
+    display: flex;
+    gap: 100px;
+
+}
+
+
+
+
+/* media quiries */
+
+@media(max-width:768px){
+  
+     .header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 10px auto;
+      
+        
+     }
+     .header .header-right ul  {
+        font-size: 1.7rem;
+        column-gap: 40px;
+      
+     }
+
+     .header .logo img{
+        width: 190px;
+        height: auto;
+     }
+
+
+}
+
+/* Tablets Media Quieries */
+
+@media (min-width: 769px) and (max-width: 1086px)
+{
+
+ .header{
+    gap: 125px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+  
+
+}
+.hero{
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.hero .hero-container h2{
+    text-align: center;
+    margin: 80px 40px;
+    font-size: 3.0rem;
+}
+
+.hero .hero-container .primary-color{
+    background-color: #fcf9e5;
+}
+
+.gallery-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+ .gallery-items{
+    width: calc(33.333%-20px);
+  
+ }
+
+ .gallery-items img{
+    border-radius: 6px;  
+     box-shadow:10px 10px 20px rgb(201, 201, 201);
+ }
+
+ .gallery-items:hover{
+    opacity: 0.8;
+ }
+
+
+.gallery-content .gallery-items a img{
+    width: 200px;
+    height: 200px;
+}
+
+
+@media(max-width:639px){
+  
+    .gallery-content  .gallery-items a img{
+         width: 300px;
+         height: 300px;
+    }
+
+    .gallery-content {
+        margin: 0px 2px;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+.footer-logo img{
+    width: 200px;
+    height: auto;
+}
+
+
+
+.footer-container{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 56px 106px;
+}
+
+
+
+.footer-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 230px;
+
+}
+
+.footer-follow{
+    margin-bottom: 52px;
+}
+
+
+
+
+/* media quiries for mobile devices footer */
+
+@media(max-width:768px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        
+    }
+}
+
+hr{
+    gap: 20px;
+}
+
+
+.about-us{
+    background-color: black;
+    color: white;
+
+}
+
+.about-heading h1{
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 28px 0px 0px 0px;
+    font-size: 2.6rem;
+}
+
+.services-content{
+     display: flex;
+     gap: 60px;
+     padding: 0px 129px 65px;
+}
+
+.services-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.team-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 30px;
+}
+
+.team-heading h1{
+    font-size: 2.6rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.team-gallery img{
+    border-radius: 7px;
+}
+
+
+.team-gallery h5{
+    font-size:1.2rem
+}
+
+.team-gallery h6{
+    font-size: 0.8rem;
+}
+
+/* Media quiries for Mobiles */
+
+@media(max-width:975px){
+
+    .services-content{
+        flex-direction: column;
+        padding: 10px 100px 52px 100px;
+
+    }
+
+    .team-gallery{
+        flex-direction: column;
+    }
+}
+
+
+
+.contact-container{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.contact-heading{
+    text-align: center;
+ 
+}
+
+.contact-heading h1{
+    margin-bottom: 20px;
+}
+
+
+.contact-form{
+    text-align: center;
+    margin-top: 20px;
+  width: 100%;
+}
+
+.contact-form input{
+    width: 100%;
+}
+.contact-form textarea{
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid black;
+    font-family: inherit;
+    height: 150px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.contact-form input{
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.contact-form button{
+
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 30px;
+
+
+}
+
+
+.contact-form input:focus , .contact-form textarea:focus {
+outline: 0;
+}
+
+
+.contact-form button:hover{
+    background: linear-gradient(to right, white, #fcefd8);
+  
+  
+}
